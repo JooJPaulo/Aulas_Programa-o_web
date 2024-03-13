@@ -3,7 +3,10 @@ function vender() {
     var parcelas = parseInt(document.getElementById("parcelas").value);
     var resultado = document.getElementById("resultado");
 
-    if (parcelas == 1) {
+    if (isNaN(venda) || venda <= 0 || isNaN(parcelas)){
+        resultado.value = "Valor da venda inválido!";
+        return;
+    } else if (parcelas == 0 || parcelas == 1) {
         venda = venda - (venda * 0.1);
     } else if (parcelas == 2) {
         venda = venda + (venda * 0.05);
