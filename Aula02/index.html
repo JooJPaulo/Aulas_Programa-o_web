@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div>
+        <h1>Cadastro de vendas</h1>
+        <form action="" method="post" id="formCadastro">
+
+            <label for="nome">Nome do vendedor: </label>
+            <input type="text" name="nome" id="nome" required>
+            <br>
+            <label for="valor">Valor da venda: </label>
+            <input type="number" name="valor" id="valor" required>
+            <br>
+            <button type="button" onclick="cadastrarVenda()">Cadastrar</button>
+            <button type="button" onclick="removerVenda()">Remover última venda</button>
+        </form>
+    </div>
+    <div>
+        <h2>Vendas cadastradas</h2>
+        <table id="tabelaVendas">
+            
+        </table>
+    </div>
+</body>
+
+</html>
